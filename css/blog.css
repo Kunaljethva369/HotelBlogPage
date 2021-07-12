@@ -1,0 +1,1884 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* for smooth scroll */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* on scroll navbar color change */
+
+.container-xl.scrolled {
+    background-color: whitesmoke;
+    height: auto;
+}
+
+/* header */
+
+.container-xl {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.row-xl {
+    width: 100%;
+}
+
+.logo-xl {
+    float: left;
+    display: flex;
+    padding-left: 1rem;
+}
+
+.navbar-xl ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar-xl ul li {
+    list-style: none;
+    padding-top: 2rem;
+}
+
+.navbar-xl li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.navbar-xl li a:hover {
+    color: orangered;
+    transition: 0.2s ease-out;
+    border-bottom: 0.1rem solid black;
+}
+
+.order {
+    margin-top: 1rem;
+    border: 2px solid orangered;
+    border-radius: 0.5rem;
+    padding: 0.925rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.bar {
+    display: none;
+}
+
+/* main */
+
+.main-container-xl {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.main-container-xl::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url('/prerak-mentorship-frontend/Kunal/HotelBlogPage/image/back.jpg');
+    background-size: cover;
+    opacity: 0.60;
+    z-index: 0;
+}
+
+.main-xl {
+    position: relative;
+    width: 960px;
+    margin: 0px auto;
+    padding-top: 12rem;
+    padding-bottom: 6.5rem;
+}
+
+.header-para {
+    color: orangered;
+    font-size: 1.5rem;
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+.tagline {
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+.main-content {
+    color: rgb(41, 40, 40);
+    font-size: 1.3rem;
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+.reservation {
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: orangered;
+}
+
+.reservation:hover {
+    background-color: green;
+    color: white;
+}
+
+/* about */
+
+.about-container-xl {
+    width: 100%;
+    padding: 5rem 0rem 0rem 0rem;
+}
+
+.about-xl {
+    width: 1200px;
+    margin: 0px auto;
+    display: flex;
+}
+
+.left {
+    width: 50%;
+    display: block;
+    padding-top: 5rem;
+}
+
+.about-para {
+    color: orangered;
+    font-size: 1.3rem;
+    padding-top: 5rem;
+}
+
+.about-tagline {
+    padding-top: 1rem;
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.about-content {
+    color: rgb(88, 86, 86);
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.right {
+    width: 50%;
+    display: block;
+    padding-left: 4rem;
+}
+
+.right img {
+    max-width: 100%;
+}
+
+.upper {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+.uten {
+    float: left;
+    width: 50%;
+    font-size: 1.2rem;
+    color: rgb(68, 67, 67);
+    padding: 0.2rem;
+}
+
+.ice {
+    float: right;
+    width: 50%;
+    font-size: 1.2rem;
+    color: rgb(68, 67, 67);
+    padding: 0.2rem;
+}
+
+.lower {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+.apple {
+    float: left;
+    width: 50%;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    color: rgb(68, 67, 67);
+}
+
+.hotdog {
+    float: right;
+    width: 50%;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    color: rgb(68, 67, 67)
+}
+
+.uten,.ice,.apple,.hotdog{
+    display: flex;
+    align-items: center;
+}
+.uten svg,.ice svg,.apple svg,.hotdog svg{
+    margin-right: 0.400rem;
+}
+
+/* menu */
+
+.menu-container-xl {
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    padding: 5rem;
+}
+
+.menu-xl {
+    width: 960px;
+    margin: 0px auto;
+    padding-top: 7rem;
+}
+
+.menu-para {
+    color: orangered;
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-tagline {
+    color: black;
+    font-size: 3rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    padding: 1.2rem 0rem 0rem 0rem;
+}
+
+.menu-sec {
+    display: flex;
+    justify-content: space-around;
+    padding: 3.5rem 0rem 0rem 0rem;
+}
+
+.speical, .lunch, .breakfast, .dinner {
+    color: grey;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.speical:hover, .lunch:hover, .breakfast:hover, .dinner:hover {
+    background-color: orangered;
+    color: white;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+}
+
+.img-menu {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.img-speical img, .img-breakfast img, .img-lunch img, .img-dinner img {
+    max-width: 100%;
+    max-height: 20rem;
+}
+
+.img-speical, .img-breakfast, .img-lunch, .img-dinner {
+    position: relative;
+    margin-left: 1rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    max-width: 100%;
+    transition: .5s ease-in-out;
+    background-color: tomato;
+    cursor: pointer;
+}
+
+.img-speical:hover .overlay {
+    opacity: .8;
+}
+
+.img-breakfast:hover .overlay {
+    opacity: .8;
+}
+
+.img-lunch:hover .overlay {
+    opacity: .8;
+}
+
+.img-dinner:hover .overlay {
+    opacity: .8;
+}
+
+.text-sp {
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+/* services */
+
+.services-container-xl {
+    width: 100%;
+    height: auto;
+}
+
+.services-xl {
+    width: 1000px;
+    margin: 0px auto;
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+}
+
+.services-para, .services-tagline {
+    display: flex;
+    justify-content: center;
+}
+
+.services-para {
+    font-size: 1.2rem;
+    color: orangered;
+    padding: 0rem;
+}
+
+.services-tagline {
+    font-size: 3rem;
+    font-weight: 400;
+    padding: 0rem;
+}
+
+.services-lower {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.7rem;
+    padding-top: 3.5rem;
+}
+
+.services-lower img {
+    max-width: 4rem;
+    max-height: 4rem;
+}
+
+.ser-low-chef, .ser-low-qty, .ser-low-int {
+    padding: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.qty-food {
+    background-color: #fdfdfd;
+    box-shadow: 5px 10px 20px 0 #8888;
+}
+
+.best-chef, .qty-food, .int-cuisine {
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.best-chef:hover, .int-cuisine:hover {
+    box-shadow: 5px 10px 20px 0 #8888;
+    padding: 1rem;
+    transition: 0.2s ease-in-out;
+}
+
+.chef-img, .qty-img, .int-img, .chef-content h3, .qty-content h3, .int-content h3 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+.chef-content p, .qty-content p, .int-content p {
+    display: flex;
+    width: max-content;
+    padding-top: 0.5rem;
+    font-weight: 400;
+}
+
+/* book  */
+
+.book-container-xl {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.book-container-xl::before {
+    content: "";
+    background-image: url("/prerak-mentorship-frontend/Kunal/HotelBlogPage/image/table-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    opacity: 0.60;
+    z-index: 0;
+}
+
+.book-xl {
+    width: 960px;
+    margin: 0px auto;
+    padding-top: 10rem;
+    padding-bottom: 10.5rem;
+    position: relative;
+}
+
+.book-header, .book-tagline {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.book-header {
+    color: orangered;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.book-tagline {
+    word-spacing: 0.5rem;
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+
+.book-content {
+    margin-top: 4rem;
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem 2rem 4rem;
+    border-radius: 1rem;
+    background-color: whitesmoke;
+}
+
+.person, .date, .time, .book {
+    width: 24%;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+.date input, .time input, .person select {
+    font-size: 1.4rem;
+    font-weight: 200;
+    padding-left: 0.1rem;
+    border-radius: 0.4rem;
+}
+
+.person svg, .date svg, .time svg {
+    font-size: 1.7rem;
+    margin-right: 0.500rem;
+}
+
+.book span {
+    font-size: 1.4rem;
+    border: 2px solid orangered;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.book span:hover {
+    background-color: orangered;
+    color: white;
+    transition: 1s ease-in-out;
+}
+
+/* contact */
+
+.contact-container-xl {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.contact-xl {
+    width: 960px;
+    margin: 0px auto;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+.contact-header {
+    font-size: 2.5rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-content {
+    padding-top: 5rem;
+    display: flex;
+}
+
+.contact-left {
+    width: 70%;
+    display: block;
+}
+
+.contact-left h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.contact-left form {
+    padding: 1.3rem 0rem 2rem 0rem;
+}
+
+.contact-left input, .contact-left textarea {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    margin: 1rem 0rem 1rem 0rem;
+    border: transparent;
+    border-bottom: 2px solid black;
+}
+
+.contact-left input:hover, .contact-left textarea:hover {
+    background-color: gainsboro;
+    color: black;
+}
+
+.btn {
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border: 1px solid orangered;
+    color: orangered;
+}
+
+.btn:hover {
+    background-color: orangered;
+    color: white;
+    transition: 1s ease-in-out;
+}
+
+.contact-right {
+    width: 30%;
+    display: block;
+}
+
+.build, .mobile, .email {
+    padding: 1rem;
+    color: rgb(85, 85, 85);
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.email a {
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+}
+
+.build svg, .mobile svg, .email svg {
+    color: black;
+}
+
+/* footer */
+
+.footer-container-xl {
+    width: 100%;
+    height: 85vh;
+    position: relative;
+}
+
+.footer-container-xl::before {
+    content: "";
+    background-image: url("/prerak-mentorship-frontend/Kunal/HotelBlogPage/image/footer-back.jpg");
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.50;
+    z-index: 0;
+}
+
+.footer-xl {
+    width: 1100px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.footer-upper {
+    display: flex;
+    padding-top: 4rem;
+}
+
+.footer-logo {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.5rem;
+}
+
+.footer-logo img {
+    max-width: 10rem;
+    max-height: 10rem;
+}
+
+.navigation {
+    color: white;
+    width: 20%;
+    padding: 0.5rem;
+}
+
+.navigation h3, .useful h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.navigation li, .useful li {
+    padding: 0.25rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    list-style: none;
+}
+
+.navigation li a, .useful li a {
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+}
+
+.navigation li a:hover, .useful li a:hover {
+    color: orangered;
+    border-bottom: 1px solid black;
+    transition: 0.20s ease-in-out;
+}
+
+.useful {
+    color: white;
+    width: 20%;
+    padding: 0.5rem;
+}
+
+.footer-lower {
+    display: flex;
+    padding-top: 5rem;
+}
+
+.footer-lower-left {
+    width: 65%;
+    padding: 0.5rem;
+}
+
+.footer-lower-left p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgb(59, 59, 59);
+}
+
+.footer-logo-name {
+    cursor: pointer;
+    color: orangered;
+}
+
+.footer-logo-name:hover {
+    color: rgb(59, 59, 59);
+    transition: 0.25s ease-in-out;
+}
+
+.footer-lower-right {
+    padding: 0.5rem;
+}
+
+.footer-lower-right span {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-right: 1rem;
+}
+
+.follow {
+    color: white;
+}
+
+.twitter, .facebook, .world, .insta {
+    color: gray;
+}
+
+.twitter:hover, .facebook:hover, .world:hover, .insta:hover {
+    color: white;
+}
+
+/* media query */
+
+/* less then big screen */
+
+@media only screen and (min-width:992px) and (max-width:1250px) {
+    .container-lg {
+        display: flex;
+    }
+    .main-container-lg {
+        background-size: cover;
+        position: relative;
+        top: 0rem;
+    }
+    .about-container-lg {
+        width: 100%;
+        padding: 5rem 0rem 0rem 0rem;
+    }
+    .about-lg {
+        width: 100%;
+        margin: 0px auto;
+        display: flex;
+    }
+    .left {
+        width: 50%;
+        display: block;
+    }
+    .about-para {
+        color: orangered;
+        font-size: 1.3rem;
+        padding: 5rem 0rem 0rem 1rem;
+    }
+    .about-tagline {
+        padding: 1rem 0rem 0rem 1rem;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .about-content {
+        color: rgb(88, 86, 86);
+        padding: 1rem 0rem 0rem 1rem;
+        font-size: 1.2rem;
+    }
+    .right {
+        width: 50%;
+        display: flex;
+        padding-left: 0rem;
+    }
+    .right img {
+        max-width: 100%;
+        padding: 1rem;
+        padding-left: 1rem !important;
+    }
+    .uten, .ice, .hotdog, .apple {
+        padding: 0rem 2rem 0rem 2rem;
+    }
+    .menu-container-lg {
+        width: 100%;
+        padding: 7rem 0rem 3rem 0rem;
+    }
+    .menu-lg {
+        width: 100%;
+        padding: 1.5rem;
+    }
+    .menu-para {
+        font-size: 1.5rem;
+    }
+    .menu-tagline {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .menu-sec {
+        padding: 2rem 0rem 2rem 0rem !important;
+    }
+    .menu-sec span {
+        padding: 0rem 1rem 0rem 1rem !important;
+    }
+    .services-container-lg {
+        width: 100%;
+    }
+    .services-lg {
+        width: 100%;
+    }
+    .services-para {
+        font-size: 2rem;
+        padding: 0.6rem;
+    }
+    .services-tagline {
+        font-size: 3rem;
+        padding: 0.6rem;
+    }
+    .services-lower {
+        width: 100%;
+        display: flex;
+    }
+    .ser-low-chef, .ser-low-int, .ser-low-qty {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0rem 0rem 0rem !important;
+        padding: 0.1rem !important;
+    }
+    .best-chef, .qty-food, .int-cuisine {
+        padding: 0.3rem !important;
+    }
+    .ser-low-chef, .ser-low-int, .ser-low-qty {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0rem 0rem 0rem !important;
+        padding: 0.5rem !important;
+    }
+    .best-chef, .qty-food, .int-cuisine {
+        padding: 0.9rem !important;
+    }
+    .chef-content p, .qty-content p, .int-content p {
+        width: 100%;
+    }
+    .book-container-lg {
+        width: 100%;
+    }
+    .book-lg {
+        width: 100%;
+    }
+    .book-header {
+        font-size: 1.5rem;
+    }
+    .book-tagline {
+        font-size: 2.8rem;
+    }
+    .book-content-container {
+        padding: 0rem 8rem 0rem 8rem;
+    }
+    .book-content {
+        margin-top: 4rem;
+        width: 100%;
+        height: auto;
+        padding: 2rem 0.5rem 2rem 0.5rem;
+        border-radius: 1rem;
+        background-color: whitesmoke;
+    }
+    .person, .date, .time, .book {
+        width: 49%;
+        padding: 1.5rem !important;
+    }
+    .date input, .time input, .person select {
+        display: flex;
+        font-size: 1.5rem;
+        font-weight: 200;
+        width: 100%;
+        border-radius: 0.4rem;
+    }
+    .person svg, .date svg, .time svg {
+        font-size: 1.7rem;
+    }
+    .book span {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        border: 2px solid orangered;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    .book span:hover {
+        background-color: orangered;
+        color: white;
+        transition: 1s ease-in-out;
+    }
+    .contact-container-lg {
+        width: 100%;
+    }
+    .contact-lg {
+        width: 100%;
+    }
+    .contact-content {
+        width: 100%;
+        display: flex;
+        padding: 4rem 2rem 0rem 2rem;
+    }
+    .contact-left {
+        width: 60%;
+        display: block;
+    }
+    .btn {
+        max-width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+    .contact-right {
+        width: 40%;
+        padding-left: 1rem;
+        display: block;
+    }
+    .footer-container-lg {
+        width: 100%;
+        height: auto;
+    }
+    .footer-lg {
+        width: 100%;
+        display: block;
+        padding: 0rem;
+    }
+    .footer-upper {
+        width: 100%;
+        display: flex;
+        padding: 0rem !important;
+    }
+    .footer-logo {
+        width: 100%;
+        display: block;
+        padding: 0rem !important;
+    }
+    .navigation, .useful {
+        width: 100%;
+        display: block;
+        padding: 0.500rem !important;
+    }
+    .footer-lower {
+        display: flex;
+        padding-top: 1rem !important;
+    }
+    .footer-lower-left {
+        width: 70%;
+        padding: 0.500rem !important;
+    }
+    .footer-lower-right {
+        width: 30%;
+        padding: 0.500rem !important;
+    }
+}
+
+/* tablet */
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .container-md.scrolled {
+        background-color: whitesmoke;
+        height: auto;
+    }
+    .container-md {
+        background-color: rgba(235, 231, 231, 0.89);
+    }
+    .row-md {
+        width: 100%;
+    }
+    .navbar-md {
+        width: 100%;
+        display: none;
+        background-color: whitesmoke;
+        border-top: 1px solid #8888;
+    }
+    .navbar-md ul {
+        display: block;
+        padding-top: 0rem !important;
+        height: 16rem;
+    }
+    .navbar-md li {
+        padding-left: 3rem;
+        justify-self: center;
+        padding-top: 0.950rem !important;
+    }
+    .navbar-md a {
+        color: black;
+    }
+    .mystyle {
+        display: inline-table;
+        justify-content: center;
+    }
+    .order {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 5rem;
+        left: 6.8rem;
+        width: 20%;
+        margin-left: 2.8rem;
+        margin-bottom: 1rem;
+    }
+    .bar {
+        float: right;
+        display: flex;
+        cursor: pointer;
+        font-size: 2rem;
+        color: orangered;
+        padding: 2rem 2rem 0rem 0rem;
+    }
+    .main-container-md {
+        width: 100%;
+        display: block;
+        background-size: cover;
+        position: relative;
+        top: 6.5rem;
+        padding-top: 5.5rem;
+        padding-bottom: 4rem;
+    }
+    .main-md {
+        width: 100%;
+        display: block;
+        padding: 1rem;
+    }
+    .header-para {
+        font-size: 1.8rem;
+    }
+    .tagline {
+        font-size: 2.5rem;
+    }
+    .main-content {
+        font-size: 1.4rem;
+    }
+    .reservation {
+        width: 10rem;
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        color: white;
+        background-color: orangered;
+    }
+    .about-container-md {
+        width: 100%;
+        display: block;
+        padding-top: 6rem;
+    }
+    .about-md {
+        width: 100%;
+        display: block;
+    }
+    .left {
+        width: 100%;
+        display: block;
+    }
+    .about-para {
+        padding: 0rem 2rem 1rem 2rem;
+        font-size: 1.4rem;
+    }
+    .about-tagline {
+        padding: 0rem 2rem 0rem 2rem;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    .about-content {
+        padding: 1rem 2rem 0rem 2rem;
+        padding-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+    .right {
+        width: 100%;
+        display: block;
+        padding-left: 0rem !important;
+    }
+    .right img {
+        padding: 2.5rem;
+        max-width: 100%;
+        width: 100%;
+    }
+    .uten, .ice, .hotdog, .apple {
+        padding: 0rem 2rem 0rem 2rem;
+    }
+    .menu-container-md {
+        width: 100%;
+        padding: 8rem 0rem 3rem 0rem;
+    }
+    .menu-md {
+        width: 100%;
+        padding: 1rem;
+    }
+    .menu-para {
+        font-size: 1.5rem;
+    }
+    .menu-tagline {
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+    .menu-sec {
+        padding: 2.5rem 0rem 2rem 0rems !important;
+    }
+    .menu-sec span {
+        font-size: 2rem;
+        padding: 0rem 1rem 0rem 1rem !important;
+    }
+    .services-container-md {
+        width: 100%;
+    }
+    .services-md {
+        width: 100%;
+    }
+    .services-para {
+        font-size: 1.8rem;
+        padding: 0.6rem;
+    }
+    .services-tagline {
+        font-size: 2.5rem;
+        padding: 0.6rem;
+    }
+    .services-lower {
+        width: 100%;
+        display: flex;
+    }
+    .ser-low-chef, .ser-low-int, .ser-low-qty {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0rem 0rem 0rem !important;
+        padding: 0rem !important;
+    }
+    .best-chef, .qty-food, .int-cuisine {
+        padding: 0.2rem !important;
+    }
+    .ser-low-chef, .ser-low-int, .ser-low-qty {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0rem 0rem 0rem !important;
+        padding: 0.1rem !important;
+    }
+    .best-chef, .qty-food, .int-cuisine {
+        padding: 0.3rem !important;
+    }
+    .ser-low-chef, .ser-low-int, .ser-low-qty {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0rem 0rem 0rem !important;
+        padding: 0.5rem !important;
+    }
+    .best-chef, .qty-food, .int-cuisine {
+        padding: 0.9rem !important;
+    }
+    .chef-content p, .qty-content p, .int-content p {
+        width: 100%;
+        padding-top: 0.3rem;
+    }
+    .book-container-md {
+        width: 100%;
+    }
+    .book-md {
+        width: 100%;
+    }
+    .book-header {
+        font-size: 1.5rem;
+    }
+    .book-tagline {
+        font-size: 2.8rem;
+    }
+    .book-content-container {
+        padding: 0rem 5rem 0rem 5rem;
+    }
+    .book-content {
+        margin-top: 4rem;
+        width: 100%;
+        height: auto;
+        padding: 2rem 0.5rem 2rem 0.5rem;
+        border-radius: 1rem;
+        background-color: whitesmoke;
+    }
+    .person, .date, .time, .book {
+        width: 49%;
+        padding: 1rem !important;
+    }
+    .date input, .time input, .person select {
+        display: flex;
+        font-size: 1.5rem;
+        font-weight: 200;
+        width: 100%;
+        border-radius: 0.4rem;
+    }
+    .person svg, .date svg, .time svg {
+        font-size: 1.7rem;
+    }
+    .book span {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        border: 2px solid orangered;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    .book span:hover {
+        background-color: orangered;
+        color: white;
+        transition: 1s ease-in-out;
+    }
+    .contact-container-md {
+        width: 100%;
+    }
+    .contact-md {
+        width: 100%;
+    }
+    .contact-content {
+        width: 100%;
+        display: flex;
+        padding: 4rem 2rem 0rem 2rem;
+    }
+    .contact-left {
+        width: 60%;
+        display: block;
+    }
+    .contact-left input {
+        width: 100%;
+    }
+    .btn {
+        max-width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+    .contact-right {
+        width: 40%;
+        padding-left: 1.5rem;
+        padding-top: 6rem;
+        display: block;
+    }
+    .footer-container-md {
+        width: 100%;
+        height: auto;
+    }
+    .footer-md {
+        width: 100%;
+        display: block;
+        padding: 0rem;
+    }
+    .footer-upper {
+        width: 100%;
+        display: flex;
+        padding: 0rem !important;
+    }
+    .footer-logo {
+        width: 100%;
+        display: block;
+        padding: 0rem !important;
+    }
+    .navigation, .useful {
+        width: 100%;
+        display: block;
+        padding: 0.500rem !important;
+    }
+    .footer-lower {
+        display: flex;
+        padding-top: 1rem !important;
+    }
+    .footer-lower-left {
+        width: 60%;
+        padding: 0.500rem !important;
+    }
+    .footer-lower-right {
+        width: 40%;
+        padding: 0.500rem !important;
+    }
+}
+
+/* medium mobile */
+
+@media only screen and (min-width:600px) and (max-width:767px) {
+    .container-sm.scrolled {
+        background-color: whitesmoke;
+        height: auto;
+    }
+    .container-sm {
+        background-color: rgba(235, 231, 231, 0.89);
+    }
+    .row-sm {
+        width: 100%;
+    }
+    .navbar-sm {
+        width: 100%;
+        display: none;
+        background-color: whitesmoke;
+        border-top: 1px solid #8888;
+    }
+    .navbar-sm ul {
+        display: block;
+        padding-top: 0rem !important;
+        height: 16rem;
+    }
+    .navbar-sm li {
+        padding-left: 3rem;
+        justify-self: center;
+        padding-top: 0.950rem !important;
+    }
+    .navbar-sm a {
+        color: black;
+    }
+    .mystyle {
+        display: inline-table;
+        justify-content: center;
+    }
+    .order {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 5rem;
+        left: 6.8rem;
+        width: 30%;
+        margin-left: 2.8rem;
+        margin-bottom: 1rem;
+    }
+    .bar {
+        float: right;
+        display: flex;
+        cursor: pointer;
+        font-size: 2rem;
+        color: orangered;
+        padding: 2rem 2rem 0rem 0rem;
+    }
+    .main-container-sm {
+        width: 100%;
+        display: block;
+        background-size: cover;
+        position: relative;
+        top: 6rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .main-sm {
+        width: 100%;
+        display: block;
+        padding: 0.9rem;
+    }
+    .header-para {
+        font-size: 1.8rem;
+    }
+    .tagline {
+        font-size: 2.5rem;
+    }
+    .main-content {
+        font-size: 1.4rem;
+    }
+    .reservation {
+        width: 10rem;
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        color: white;
+        background-color: orangered;
+    }
+    .about-container-sm {
+        width: 100%;
+        display: block;
+        padding-top: 6rem;
+    }
+    .about-sm {
+        width: 100%;
+        display: block;
+    }
+    .left {
+        width: 100%;
+        display: block;
+    }
+    .about-para {
+        padding: 0.8rem 0rem 0rem 0.7rem;
+        font-size: 1.4rem;
+    }
+    .about-tagline {
+        padding: 0.8rem 0rem 0rem 0.7rem;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    .about-content {
+        padding: 0.8rem 0rem 0rem 0.7rem;
+        padding-bottom: 2rem;
+        font-size: 1.3rem;
+    }
+    .right {
+        width: 100%;
+        display: block;
+        padding-left: 0rem !important;
+    }
+    .right img {
+        padding: 0.8rem 0.7rem 0rem 0.7rem;
+        max-width: 100%;
+        width: 100%;
+    }
+    .uten, .ice, .hotdog, .apple {
+        padding: 0rem 1.5rem 0rem 1.5rem;
+    }
+    .menu-container-sm {
+        width: 100%;
+        padding: 1rem;
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+    }
+    .menu-sm {
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .menu-para {
+        font-size: 1.3rem;
+    }
+    .menu-tagline {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .menu-sec {
+        padding: 2rem 0rem 2rem 0rem !important;
+    }
+    .menu-sec span {
+        font-size: 1.5rem;
+        padding: 0rem 0.8rem 0rem 0.8rem !important;
+    }
+    .services-container-sm {
+        width: 100%;
+    }
+    .services-sm {
+        width: 100%;
+    }
+    .services-para {
+        font-size: 1.8rem;
+        padding: 0.3rem;
+    }
+    .services-tagline {
+        font-size: 2.5rem;
+        padding: 0.4rem;
+    }
+    .services-lower {
+        width: 100%;
+        display: inline-block;
+        justify-content: center;
+    }
+    .ser-low-chef, .ser-low-int, .ser-low-qty {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0rem 0rem 0rem !important;
+        padding: 0rem !important;
+    }
+    .best-chef, .qty-food, .int-cuisine {
+        padding: 0.9rem !important;
+    }
+    .chef-img, .qty-img, .int-img, .chef-content h3, .qty-content h3, .int-content h3 {
+        display: flex;
+        justify-content: center;
+        padding-top: 0.2rem;
+    }
+    .chef-content p, .qty-content p, .int-content p {
+        display: flex;
+        width: max-content;
+        padding-top: 0.2rem;
+    }
+    .book-container-sm {
+        width: 100%;
+    }
+    .book-sm {
+        width: 100%;
+    }
+    .book-header {
+        font-size: 1.5rem;
+    }
+    .book-tagline {
+        font-size: 2.8rem;
+    }
+    .book-content-container {
+        padding: 0rem 1.8rem 0rem 1.8rem;
+    }
+    .book-content {
+        margin-top: 4rem;
+        width: 100%;
+        height: auto;
+        padding: 2rem 0.5rem 2rem 0.5rem;
+        border-radius: 1rem;
+        background-color: whitesmoke;
+    }
+    .person, .date, .time, .book {
+        width: 49%;
+        padding: 0.500rem !important;
+    }
+    .date input, .time input, .person select {
+        display: flex;
+        font-size: 1.4rem;
+        font-weight: 200;
+        width: 100%;
+        margin-top: 1rem;
+        border-radius: 0.4rem;
+    }
+    .person svg, .date svg, .time svg {
+        margin-top: 1.5rem;
+    }
+    .book span {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 1.4rem;
+        border: 2px solid orangered;
+        padding: 0.5rem;
+        margin-top: 1rem;
+        border-radius: 0.5rem;
+    }
+    .book span:hover {
+        background-color: orangered;
+        color: white;
+        transition: 1s ease-in-out;
+    }
+    .contact-container-sm {
+        width: 100%;
+    }
+    .contact-sm {
+        width: 100%;
+    }
+    .contact-content {
+        width: 100%;
+        display: block;
+        padding: 0rem 6rem 0rem 6rem;
+    }
+    .contact-left {
+        padding-top: 4rem;
+        width: 100%;
+        display: block;
+    }
+    .contact-left input {
+        width: 100%;
+    }
+    .btn {
+        max-width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+    .contact-right {
+        width: 100%;
+        display: block;
+    }
+    .footer-container-sm {
+        width: 100%;
+        height: auto;
+    }
+    .footer-sm {
+        width: 100%;
+        display: block;
+        padding: 0rem;
+    }
+    .footer-upper {
+        width: 100%;
+        display: flex;
+        padding: 0rem !important;
+    }
+    .footer-logo {
+        width: 100%;
+        display: block;
+        padding: 0rem !important;
+    }
+    .navigation, .useful {
+        width: 100%;
+        display: block;
+        padding: 0.500rem !important;
+    }
+    .footer-lower {
+        display: inline-block;
+        padding-top: 1rem !important;
+    }
+    .footer-lower-left {
+        width: 100%;
+        padding: 0.500rem !important;
+    }
+}
+
+/* moblie */
+
+@media only screen and (max-width:599px) {
+    .container-s.scrolled {
+        background-color: whitesmoke;
+        height: auto;
+    }
+    .container-s {
+        background-color: rgba(235, 231, 231, 0.89);
+        z-index: 1;
+    }
+    .row-s {
+        width: 100%;
+    }
+    .navbar-s {
+        width: 100%;
+        display: none;
+        background-color: whitesmoke;
+        border-top: 1px solid #8888;
+    }
+    .navbar-s ul {
+        display: block;
+        padding-top: 0rem !important;
+        height: 16rem;
+    }
+    .navbar-s li {
+        padding-left: 3rem;
+        justify-self: center;
+        padding-top: 0.950rem !important;
+    }
+    .navbar-s a {
+        color: black;
+    }
+    .mystyle {
+        display: inline-table;
+        justify-content: center;
+    }
+    .order {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 5rem;
+        left: 6.8rem;
+        width:max-content;
+        margin-left: 2.8rem;
+        margin-bottom: 1rem;
+    }
+    .bar {
+        float: right;
+        display: flex;
+        cursor: pointer;
+        font-size: 2rem;
+        color: orangered;
+        padding: 2rem 2rem 0rem 0rem;
+    }
+    .main-container-s {
+        width: 100%;
+        height: auto;
+        display: block;
+        background-size: cover;
+        position: relative;
+        top: 6rem;
+        padding: 6rem 0rem 6.8rem 0rem;
+    }
+    .main-s {
+        width: 100%;
+        display: block;
+        padding: 0.7rem;
+    }
+    .header-para {
+        font-size: 1.5rem;
+    }
+    .tagline {
+        font-size: 1.8rem;
+    }
+    .main-content {
+        font-size: 1.2rem;
+    }
+    .reservation {
+        width: 10rem;
+        display: flex;
+        justify-content: center;
+        font-size: 1.3rem;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        color: white;
+        background-color: orangered;
+    }
+    .about-container-s {
+        width: 100%;
+        display: block;
+        padding-top: 6rem;
+    }
+    .about-s {
+        width: 100%;
+        display: block;
+    }
+    .left {
+        width: 100%;
+        display: block;
+    }
+    .about-para {
+        padding: 0rem 0rem 0rem 0.7rem;
+        font-size: 1.4rem;
+    }
+    .about-tagline {
+        padding: 0.8rem 0rem 0rem 0.7rem;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    .about-content {
+        padding: 0.8rem 0rem 0rem 0.7rem;
+        padding-bottom: 2rem;
+        font-size: 1.3rem;
+    }
+    .right {
+        width: 100%;
+        display: block;
+        padding-left: 0rem !important;
+    }
+    .right img {
+        padding: 0.8rem 0.5rem 0rem 0.5rem;
+        max-width: 100%;
+        width: 100%;
+    }
+    .uten, .ice, .hotdog, .apple {
+        padding: 0rem 1rem 0rem 1rem;
+    }
+    .menu-container-s {
+        width: 100%;
+        padding: 10rem 0rem 3rem 0rem;
+    }
+    .menu-s {
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .menu-para {
+        font-size: 1rem;
+    }
+    .menu-tagline {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .menu-sec {
+        padding: 2rem 0rem 2rem 0rem !important;
+    }
+    .menu-sec span {
+        padding: 0rem 0.3rem 0rem 0.3rem !important;
+    }
+    .img-menu{
+        display: block;
+    }
+    .img-speical, .img-breakfast, .img-lunch, .img-dinner{
+        display:block;
+        margin-bottom: 0.800rem !important;
+        margin-left: 0rem !important;
+    }
+    .services-container-s {
+        width: 100%;
+    }
+    .services-s {
+        width: 100%;
+    }
+    .services-para {
+        font-size: 1.4rem;
+        padding: 0.2rem;
+    }
+    .services-tagline {
+        font-size: 2.2rem;
+        padding: 0.3rem;
+    }
+    .services-lower {
+        width: 100%;
+        display: inline-block;
+    }
+    .ser-low-chef, .ser-low-int, .ser-low-qty {
+        display: flex;
+        justify-content: center;
+        padding: 0rem !important;
+        margin: 2rem 0rem 0rem 0rem !important;
+    }
+    .best-chef, .qty-food, .int-cuisine {
+        padding: 0.9rem !important;
+    }
+    .chef-img, .qty-img, .int-img, .chef-content h3, .qty-content h3, .int-content h3 {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0.2rem;
+    }
+    .chef-content p, .qty-content p, .int-content p {
+        display: flex;
+        padding-top: 0.2rem;
+    }
+    .book-container-s {
+        width: 100%;
+    }
+    .book-s {
+        width: 100%;
+    }
+    .book-header {
+        font-size: 1.5rem;
+    }
+    .book-tagline {
+        font-size: 2.8rem;
+    }
+    .book-content-container {
+        padding: 0rem 1rem 0rem 1rem;
+    }
+    .book-content {
+        margin-top: 4rem;
+        width: 100%;
+        height: auto;
+        padding: 2rem 0.5rem 2rem 0.5rem;
+        border-radius: 1rem;
+        background-color: whitesmoke;
+    }
+    .person, .date, .time, .book {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0.600rem !important;
+    }
+    .person svg, .date svg, .time svg {
+        font-size: 1.5rem;
+    }
+    .date input, .time input, .person select {
+        font-size: 1.4rem;
+        font-weight: 200;
+        width: 100%;
+        margin-top: 0rem;
+        border-radius: 0.4rem;
+    }
+    .book span {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 1.4rem;
+        border: 2px solid orangered;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    .book span:hover {
+        background-color: orangered;
+        color: white;
+        transition: 1s ease-in-out;
+    }
+    .contact-container-s {
+        width: 100%;
+    }
+    .contact-s {
+        width: 100%;
+        padding-bottom: 1rem !important;
+    }
+    .contact-content {
+        width: 100%;
+        display: block;
+        padding: 0rem 1rem 0rem 1rem;
+    }
+    .contact-left {
+        padding-top: 4rem;
+        width: 100%;
+        display: block;
+    }
+    .contact-left input {
+        width: 100%;
+    }
+    .btn {
+        max-width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+    .contact-right {
+        width: 100%;
+        display: block;
+    }
+    .footer-container-s {
+        width: 100%;
+        height: auto;
+    }
+    .footer-s {
+        width: 100%;
+        display: block;
+        padding: 0rem;
+    }
+    .footer-upper {
+        width: 100%;
+        display: inline-block;
+        padding: 0rem !important;
+    }
+    .footer-logo {
+        width: 100%;
+        display: block;
+        padding: 0rem !important;
+    }
+    .navigation, .useful {
+        width: 100%;
+        display: block;
+        padding: 0.500rem !important;
+    }
+    .footer-lower {
+        display: inline-block;
+        padding-top: 1rem !important;
+    }
+    .footer-lower-left {
+        width: 100%;
+        padding: 0.500rem !important;
+    }
+}

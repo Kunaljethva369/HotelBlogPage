@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/blog.css">
+    <title>Blog Page</title>
+    <script src="js/blog.js"></script>
+</head>
+
+<body>
+
+    <!-- Header/navbar -->
+    <div class="container-s container-sm container-md container-lg container-xl" id="con">
+        <div class="row-s row-sm row-md row-lg row-xl">
+                    <div class="logo-s logo-sm logo-md logo-lg logo-xl">
+                    <a href="#"><img src="image/logo.png" height="100px" width="100px"></a>
+                    </div>
+                    <div class="bar" onclick="bars()"><i class="fas fa-bars"></i></div>
+            <div class="navbar-s navbar-sm navbar-md navbar-lg navbar-xl">
+                    <ul>
+                        <li><a href="#main">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#book">Book Table</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <span class="order" onmouseover="order(this)" onmouseout="orderback(this)">Order Online</span> 
+                    </ul>  
+            </div>
+        </div>
+    </div>
+
+    <!-- main -->
+    <div class="main-container-s main-container-sm main-container-md main-container-lg main-container-xl" id="main">
+        <div class="main-s main-sm main-md main-lg main-xl" data-aos="fade-right" data-aos-offset="300"
+            data-aos-duration="1000">
+            <p class="header-para">Discover Your Taste</p>
+            <h1 class="tagline">We Belive Good Food <br> offer great smile</h1>
+            <p class="main-content">Good food keep people good & health, <br>
+                Come let we server you the best of us and enjoy!!!</p>
+            <div class="reservation">Reservation</div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div class="about-container-s about-container-sm about-container-md about-container-lg about-container-xl"
+        id="about">
+        <div class="about-s about-sm about-md about-lg about-xl">
+            <div class="left">
+                <p class="about-para">Discover Your Test</p>
+                <h1 class="about-tagline">We Prodive Good Food For Your Family!</h1>
+                <p class="about-content">Ut enim acgsd minim veniam, quxcis nostrud exercitation ullamco laboris nisi
+                    ufsit
+                    aliquip ex ea commodo consequat is aute irure m, quis nostrud exer.</p>
+                <div class="upper">
+                    <div class="uten"><i class="fas fa-utensils"></i><p>Ut enim ad minim veniam, quis nostrud exer.</p></div>
+                    <div class="ice"><i class="fas fa-ice-cream"></i><p>Ut enim ad minim veniam, quis nostrud exer.</p></div>
+                </div>
+                <div class="lower">
+                    <span class="apple"><i class="fas fa-apple-alt"></i>Ut enim ad minim veniam, quis nostrud
+                        exer.</span>
+                    <span class="hotdog"><i class="fas fa-hotdog"></i>Ut enim ad minim veniam, quis nostrud exer.</span>
+                </div>
+            </div>
+            <div class="right">
+                <img src="image/chef.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- menu -->
+    <div class="menu-container-s menu-container-sm menu-container-md menu-container-lg menu-container-xl" id="menu">
+        <div class="menu-s menu-sm menu-md menu-lg menu-xl">
+            <p class="menu-para">Our Offerd Menu</p>
+            <h1 class="menu-tagline">Some Trendy and Popular <Br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Courses Offerd
+            </h1>
+            <div class="menu-sec">
+                <span class="speical" onmouseover="speical()">Speical</span>
+                <span class="breakfast" onmouseover="breakfast()">Breakfast</span>
+                <span class="lunch" onmouseover="lunch()">Lunch</span>
+                <span class="dinner" onmouseover="dinner()">Dinner</span>
+            </div>
+            <div class="img-menu">
+                <span class="img-speical">
+                    <img src="image/speical.jpg">
+                    <span class="overlay">
+                        <span class="text-sp">Speical - 30$</span>
+                    </span>
+                </span>
+
+                <span class="img-breakfast">
+                    <img src="image/breakfast.jpg">
+                    <span class="overlay">
+                        <span class="text-sp">Breakfast - 15$</span>
+                    </span>
+                </span>
+
+                <span class="img-lunch">
+                    <img src="image/lunch.jpg">
+                    <span class="overlay">
+                        <span class="text-sp">Lunch - 20$</span>
+                    </span>
+                </span>
+
+                <span class="img-dinner">
+                    <img src="image/dinner.jpg">
+                    <span class="overlay">
+                        <span class="text-sp">Dinner - 25$</span>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+    <div class="services-container-s services-container-sm services-container-md services-container-lg services-container-xl"
+        id="services">
+        <div class="services-s services-sm services-md services-lg services-xl">
+            <p class="services-para">Services We Offers</p>
+            <h1 class="services-tagline">Our Best Services</h1>
+
+            <div class="services-lower">
+                <div class="ser-low-chef">
+                    <div class="best-chef">
+                        <div class="chef-img"><img src="image/chef-services.png"></div>
+                        <div class="chef-content">
+                            <h3>Best Chef</h3>
+                            <P>Lorem ipsum dolor sit amet, consectetur <br>
+                                adipisicing elit, sed do eiusmod tempor <br>
+                                incididunt ut labore et dolore.</P>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ser-low-qty">
+                    <div class="qty-food">
+                        <div class="qty-img"><img src="image/food.png"></div>
+                        <div class="qty-content">
+                            <h3>Quality Food</h3>
+                            <P>Lorem ipsum dolor sit amet, consectetur <br>
+                                adipisicing elit, sed do eiusmod tempor <br>
+                                incididunt ut labore et dolore.</P>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ser-low-int">
+                    <div class="int-cuisine">
+                        <div class="int-img"><img src="image/cuisine.png"></div>
+                        <div class="int-content">
+                            <h3>Cuisine</h3>
+                            <P>Lorem ipsum dolor sit amet, consectetur <br>
+                                adipisicing elit, sed do eiusmod tempor <br>
+                                incididunt ut labore et dolore.</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- book -->
+    <div class="book-container-s book-container-sm book-container-md book-container-lg book-container-xl" id="book">
+        <div class="book-s book-sm book-md book-lg book-xl">
+            <p class="book-header">Best In Class Tables!</p>
+            <h1 class="book-tagline">Book A Table</h1>
+            <div class="book-content-container">
+                <div class="book-content">
+
+                    <div class="person">
+                        <i class="fas fa-user-friends fa-lg"></i>
+                        <select id="person">
+                            <option value="0">No Of Person</option>
+                            <option value="1">Person 1</option>
+                            <option value="2">Person 2</option>
+                            <option value="3">Person 3</option>
+                            <option value="4">Person 4</option>
+                        </select>
+                    </div>
+
+                    <div class="date">
+                        <i class="fas fa-calendar-week fa-lg"></i>
+                        <input type="date" id="date" value="" min="2015-01-01" max="2025-12-31">
+                    </div>
+
+                    <div class="time">
+                        <i class="far fa-clock fa-lg"></i>
+                        <input type="time" id="time">
+                    </div>
+
+                    <div class="book">
+                        <span onclick="book()" id="book">Book Order</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div class="contact-container-s contact-container-sm contact-container-md contact-container-lg contact-container-xl"
+        id="contact">
+        <div class="contact-s contact-sm contact-md contact-lg contact-xl">
+            <h1 class="contact-header">Contact Us</h1>
+            <div class="contact-content">
+                <div class="contact-left">
+                    <h3>Get in Touch</h3>
+                    <form>
+                        <input type="text" placeholder="Enter Text Here" required>
+                        <input type="text" placeholder="Enter Your Name" required>
+                        <br>
+                        <input type="text" placeholder="Enter Email Adress" required>
+                        <input type="text" placeholder="Enter Your Subject" required>
+                        <br>
+                        <input type="Submit" class="btn" value="Send">
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <div class="build">
+                        <i class="far fa-building fa-lg"></i>
+                        <span>Buttonwood, California.
+                            Rosemead, CA 91770</span>
+                    </div>
+                    <div class="mobile">
+                        <i class="fas fa-mobile-alt fa-lg"></i>
+                        <span>+1 253 565 2365
+                            Mon to Fri 9am to 6pm</span>
+                    </div>
+                    <div class="email">
+                        <i class="fas fa-envelope fa-lg"></i>
+                        <span><a href="#">support@colorlib.com</a>
+                            Send us your query anytime!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer-container-s footer-container-sm footer-container-md footer-container-lg footer-container-xl">
+        <div class="footer-s footer-sm footer-md footer-lg footer-xl">
+            <div class="footer-upper">
+                <div class="footer-logo">
+                    <a href="#"><img src="image/logo.png"></a>
+                </div>
+                <div class="navigation">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Testimonial</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="useful">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">Registration</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Policy</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-lower">
+                <div class="footer-lower-left">
+                    <p>Copyright &copy 2021 All rights reserved by <span class="footer-logo-name">The Delicious
+                            Snacks</span></p>
+                </div>
+                <div class="footer-lower-right">
+                    <span class="follow">Follow Us</span>
+                    <span class="twitter"><i class="fab fa-twitter"></i></span>
+                    <span class="facebook"><i class="fab fa-facebook-f"></i></span>
+                    <span class="world"><i class="fas fa-globe"></i></span>
+                    <span class="insta"><i class="fab fa-instagram"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- for fade right -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- onscroll navbar color change script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script>
+        $(window).scroll(function () {
+            $(".container-xl").toggleClass('scrolled', $(this).scrollTop() > 100);
+        });
+    </script>
+
+</body>
+
+</html>
