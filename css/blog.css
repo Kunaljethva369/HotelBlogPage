@@ -89,7 +89,7 @@ html {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-image: url('/prerak-mentorship-frontend/Kunal/HotelBlogPage/image/back.jpg');
+    background-image: url('/image/back.jpg');
     background-size: cover;
     opacity: 0.60;
     z-index: 0;
@@ -429,7 +429,7 @@ html {
 
 .book-container-xl::before {
     content: "";
-    background-image: url("/prerak-mentorship-frontend/Kunal/HotelBlogPage/image/table-back.jpg");
+    background-image: url("/image/table-back.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -607,7 +607,7 @@ html {
 
 .footer-container-xl::before {
     content: "";
-    background-image: url("/prerak-mentorship-frontend/Kunal/HotelBlogPage/image/footer-back.jpg");
+    background-image: url("/image/footer-back.jpg");
     background-size: cover;
     background-position-y: center;
     background-repeat: no-repeat;
